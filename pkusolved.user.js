@@ -19,7 +19,6 @@
 		window.localStorage.setItem("solved", JSON.stringify(s));
 	};
 	if(!s||new Date().getTime()>s[0]){
-		alert(s[0]+"no"+s);
 		GM_xmlhttpRequest({method:"get", url:"http://poj.org/userstatus?user_id="+id, onload:chk});
 		s = window.localStorage.getItem["solved"];
 	}
