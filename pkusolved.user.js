@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name	PKUSolved
 // @namespace	http://j.mp/nolze
-// @description	Show whether you solved the problem on poj.org.
+// @description	Show whether you solved a particular problem on poj.org.
 // @include	http://poj.org/problem?id=*
 // ==/UserScript==
 (function(){
