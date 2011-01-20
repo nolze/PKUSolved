@@ -8,7 +8,8 @@
 	var id = window.localStorage.getItem("id");
 	if(!id){
 		id = window.prompt("Enter your user ID", null);
-		if(id){ window.localStorage.setItem("id", id); }
+		if(!id)return;
+		window.localStorage.setItem("id", id);
 	}
 	var chk = function(obj){
 		s = new Array();
@@ -25,4 +26,5 @@
 	if(s.indexOf("p("+document.title.substr(0,4)+")")!=-1){
 		document.title = "[S]" + document.title;
 	}
+	return;
 })();
