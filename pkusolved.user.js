@@ -2,8 +2,10 @@
 // @name	PKUSolved
 // @namespace	http://j.mp/nolze
 // @description	Show whether you solved a particular problem on poj.org.
-// @include	http://poj.org/problem?id=*
+// @match http://poj.org/problem?id=*
 // ==/UserScript==
+// If your browser doesn't support @match use this:
+// @include	http://poj.org/problem?id=*
 (function(){
 	var id = window.localStorage.getItem("id");
 	if(!id){
